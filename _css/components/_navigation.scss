@@ -1,20 +1,14 @@
-$foundation-palette: (
-   primary: #587E61,
-  secondary: #7F8B9C,
-  success: #604B44,
-  warning: #294C4D,
-  alert: #1F1F15,
-);
 @include add-foundation-colors;
 
 header {
-    background: $dark-gray;
+    // background: lighten($dark-gray, 80%);
+    background: $light-gray;
 }
 .infoBar {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    color: $white;
+    color: $dark-gray;
     display: flex;
     align-items: center;
 
@@ -30,7 +24,7 @@ header {
 
     h1 a {
     text-indent: -5000px;
-    background: url(../logo.png) no-repeat center center;
+    background: url(http://sitesforchurch.s3.amazonaws.com/logo2.png) no-repeat center center;
     width: 367px;
     height: 78px;
     line-height: 65px;
@@ -44,7 +38,7 @@ header {
             display: block;
             max-width: 330px;
             text-align: right;
-            border-right: 1px solid $white;
+            border-right: 1px solid $dark-gray;
             flex-grow: 1;
             margin-top: 10px;
             margin-bottom: 10px;
@@ -81,8 +75,10 @@ header {
     display: none;
     @include breakpoint (726px){
         display: block;
-        background:linear-gradient(-1deg, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%) rgba(255, 255, 255, 0.89);
+        // background:linear-gradient(-1deg, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%) rgba(255, 255, 255, 0.89);
+        background: $dark-gray;
     }
+
 
     ul.dropdown.menu {
         display: flex;
@@ -90,9 +86,13 @@ header {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
+
+        ul li a {
+            color: $dark-gray;
+        }
     }
     ul li a {
-        color: $dark-gray;
+        color: $white;
         font-size: 17px;
         font-weight: 600;
         font-family: $header-font-family;

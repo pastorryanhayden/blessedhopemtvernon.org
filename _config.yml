@@ -1,15 +1,17 @@
 # What's the name of the church?
-title: Immanuel Baptist Church
+title: Blessed Hope Baptist Church
 # Give a brief description of the church
 description: > # this means to ignore newlines until "baseurl:"
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus blanditiis odio corrupti, 
-    illum architecto consequuntur, quaerat unde repudiandae qui temporibus! Fuga maxime molestiae hic impedit 
-    sit sint perferendis rerum unde.
+    Blessed Hope Baptist Church is an independent Baptist church located in Mt. Vernon, IL.  It was founded in 2012.
+
+
+
 # Leave this alone
 baseurl: "" # the subpath of your site, e.g. /blog
+
 # Change this to the domain when you are finished and ready to publish.
 
-url: "http://delanobaptist.org/" # the base hostname & protocol for your site | Switch to http://cranesvillebiblechurch.com/" Before running Glynn.  Afterwards change it back to http://localhost:4000/
+url: "http://blessedhopemtvernon.org/" # the base hostname & protocol for your site | Switch to http://cranesvillebiblechurch.com/" Before running Glynn.  Afterwards change it back to http://localhost:4000/
 
 # This is the path to the default images.  If you add different default images you can change them here.
 default_header_image: "assets/default_header.jpg"
@@ -17,33 +19,41 @@ default_sermon_image: "assets/default_header.jpg"
 default_blog_image: "assets/default_header.jpg"
 default_about_image: "assets/default_header.jpg"
 default_calendar_image: "assets/calendar_default.jpg"
+logo: "http://sitesforchurch.s3.amazonaws.com/logo2.png"
+
+# Church Details
+
+
+church_name: "Blessed Hope Baptist Church"
+church_location: "Mt. Vernon, IL"
 
 # Service Schedule
 service_schedule: |
   <li>Sunday School<span> 10:00AM</span></li>
   <li>Morning Worship<span>11:00AM</span></li>
-  <li>Evening Worship<span> 2:00PM</span></li>
-  <li>Wednesday Bible Study<span> 7:00PM</span></li>
+  <li>Sunday Evening<span> 6:00PM</span></li>
+  <li>Wednesday Night<span> 6:00PM</span></li>
 
-# Header contact
-header_contact: |
-  2327 Oxford Street, Delano, California 93215 <br>
-  661-725-0479 • info@delanobaptist.org<br>
-  
+# Contact information
+phone: "661-725-0479"
+address: "P.O. Box 1684, Mt. Vernon, Illinois 62864"
+email: "info@delanobaptist.org"
+
 twitter: 
-facebook: "https://www.facebook.com/profile.php?id=100006405525766"
-youtube: 
+facebook: "https://www.facebook.com/pages/Blessed-Hope-Baptist-Church-in-Mount-Vernon-IL/591991170863042?pnref=lhc&rf=168948383299488"
+youtube: ""
 
 # Airtable API Stuff
 airtable:
   apikey: "keyRTLlrVS02vC3Vx"
   blog: "appemSttDE2EUGHNP"
-  sermons: "appR4YoNuehPBcHi9"
-  series: "appR4YoNuehPBcHi9"
-  ministries: "appcRxPIIFjfDWFvN"
-  photos: "appcRxPIIFjfDWFvN"
-  events: "appcRxPIIFjfDWFvN"
-  abouts: "appcj5H57pRs6MloL"
+  sermons: "appl2J04KN22eh0kq"
+  series: "appl2J04KN22eh0kq"
+  ministries: "appE4Jwg9zvuIGba0"
+  photos: "appE4Jwg9zvuIGba0"
+  events: "appE4Jwg9zvuIGba0"
+  abouts: "appRsaYmgnz7KU4Aw"
+
 
 # LEAVE EVERYTHING ELSE ALONE!!
 
@@ -91,7 +101,7 @@ page_gen:
     dir: 'about-us'
 
 ftp_host: 'biblebaptistmattoon.org'
-ftp_dir: 'delanobaptist.org/'
+ftp_dir: 'blessedhopemtvernon.org/'
 ftp_passive: false
 ftp_username: 'ryahay11'
 ftp_password: '@88Volvocj'
