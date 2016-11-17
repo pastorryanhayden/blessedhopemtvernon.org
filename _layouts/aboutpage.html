@@ -5,7 +5,7 @@ layout: default
 {% for img in page.featured_image %}
 <style>
     .aboutPage__Title {
-        background: url({{img.url}}) no-repeat center center;
+        background: url({{img.url}}) no-repeat;
         background-size: cover;
 
     }
@@ -14,7 +14,7 @@ layout: default
 {% else %}
 <style>
     .aboutPage__Title {
-        background: url({{site.url}}{{site.default_about_image}}) no-repeat center center;
+        background: url({{site.default_about_image}}) no-repeat;
          background-size: cover;
     }
 </style>

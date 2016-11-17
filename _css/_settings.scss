@@ -10,6 +10,7 @@
 // b. Change these variables.
 $body-font-family: 'Antic', sans-serif;
 $header-font-family: 'Antic Slab', serif;
+$sans-serif: $body-font-family;
  
 
 // 2. Colors
@@ -21,6 +22,9 @@ $foundation-palette: (
   warning: #F68657,
   alert: #F6B352,
 );
+$bold-color: $alert-color;
+$main-color: #E07A3E;
+$subtle-color: #F6B352;
 $text-color: #1F1F15;
 $light-gray: #e6e6e6;
 $medium-gray: #383A3F;

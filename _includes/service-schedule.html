@@ -1,10 +1,6 @@
-<!-- 
-Just change the things between the tags:  <li> HERE </li>
-You can copy and paste a new <li></li> or delete one if needed.
--->
-<ul>
-    <li>Sunday School - 10AM</li>
-    <li>Main Service - 11AM</li>
-    <li>Evening Service - 6PM</li>
-    <li>Wednesday Prayer Meeting - 7PM</li>
+<ul class="menu vertical">
+    {% for item in site.data.service_schedule %}
+    
+    <li>{{item.Service_name}} {% if item.Service_time %}<span> {{item.Service_time}}</span>{% endif %}</li>
+    {% endfor %}
 </ul>

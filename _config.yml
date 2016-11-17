@@ -1,17 +1,15 @@
 # What's the name of the church?
-title: Blessed Hope Baptist Church
+title: Cranesville Bible Church
 # Give a brief description of the church
 description: > # this means to ignore newlines until "baseurl:"
-    Blessed Hope Baptist Church is an independent Baptist church located in Mt. Vernon, IL.  It was founded in 2012.
-
-
-
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus blanditiis odio corrupti, 
+    illum architecto consequuntur, quaerat unde repudiandae qui temporibus! Fuga maxime molestiae hic impedit 
+    sit sint perferendis rerum unde.
 # Leave this alone
 baseurl: "" # the subpath of your site, e.g. /blog
-
 # Change this to the domain when you are finished and ready to publish.
 
-url: "http://blessedhopemtvernon.org/" # the base hostname & protocol for your site | Switch to http://cranesvillebiblechurch.com/" Before running Glynn.  Afterwards change it back to http://localhost:4000/
+url: "http://localhost:3000/" # the base hostname & protocol for your site | Switch to http://cranesvillebiblechurch.com/" Before running Glynn.  Afterwards change it back to http://localhost:4000/
 
 # This is the path to the default images.  If you add different default images you can change them here.
 default_header_image: "assets/default_header.jpg"
@@ -19,41 +17,29 @@ default_sermon_image: "assets/default_header.jpg"
 default_blog_image: "assets/default_header.jpg"
 default_about_image: "assets/default_header.jpg"
 default_calendar_image: "assets/calendar_default.jpg"
-logo: "http://sitesforchurch.s3.amazonaws.com/logo2.png"
 
-# Church Details
-
-
-church_name: "Blessed Hope Baptist Church"
-church_location: "Mt. Vernon, IL"
-
-# Service Schedule
-service_schedule: |
-  <li>Sunday School<span> 10:00AM</span></li>
-  <li>Morning Worship<span>11:00AM</span></li>
-  <li>Sunday Evening<span> 6:00PM</span></li>
-  <li>Wednesday Night<span> 6:00PM</span></li>
-
-# Contact information
-phone: "661-725-0479"
-address: "P.O. Box 1684, Mt. Vernon, Illinois 62864"
-email: "info@delanobaptist.org"
-
-twitter: 
-facebook: "https://www.facebook.com/pages/Blessed-Hope-Baptist-Church-in-Mount-Vernon-IL/591991170863042?pnref=lhc&rf=168948383299488"
-youtube: ""
+# The lattitude and longitude for Google Maps
+map_lat: "39.476286"
+map_long: "-88.4009097"
 
 # Airtable API Stuff
 airtable:
   apikey: "keyRTLlrVS02vC3Vx"
-  blog: "appemSttDE2EUGHNP"
-  sermons: "appl2J04KN22eh0kq"
-  series: "appl2J04KN22eh0kq"
-  ministries: "appE4Jwg9zvuIGba0"
-  photos: "appE4Jwg9zvuIGba0"
-  events: "appE4Jwg9zvuIGba0"
-  abouts: "appRsaYmgnz7KU4Aw"
-
+  blog: "appLcv0s6Cg3Jie6W"
+  sermons: "appjDcSOgttGZFb6F"
+  series: "appjDcSOgttGZFb6F"
+  ministries: "app6UIjjT4KCUuMgi"
+  photos: "app6UIjjT4KCUuMgi"
+  events: "app6UIjjT4KCUuMgi"
+  abouts: "appsrygSTLxl5hDKx"
+  sick: "app97CT9gvhCTVfBj"
+  cancer: "app97CT9gvhCTVfBj"
+  other: "app97CT9gvhCTVfBj"
+  weekly: "app97CT9gvhCTVfBj"
+  welcome: "app5gEshSfJvRdYhR"
+  info: "appzLb1Ne3k0OOVMd"
+  contact: "appaJ0FssAvq0kiD3"
+  missionaries: "appIfFWAjJoPWDoyp"
 
 # LEAVE EVERYTHING ELSE ALONE!!
 
@@ -68,6 +54,8 @@ exclude:
   - bower_components
 keep_files:
   - css
+  - assets/css
+  - assets/js 
 
 
 page_gen:
@@ -95,13 +83,8 @@ page_gen:
     template: 'event'
     name: 'event_name'
     dir: 'events'
-  - data: 'abouts'
-    template: 'about'
-    name: 'title'
-    dir: 'about-us'
+
 
 ftp_host: 'biblebaptistmattoon.org'
-ftp_dir: 'blessedhopemtvernon.org/'
+ftp_dir: 'biblebaptistmattoon.org/'
 ftp_passive: false
-ftp_username: 'ryahay11'
-ftp_password: '@88Volvocj'

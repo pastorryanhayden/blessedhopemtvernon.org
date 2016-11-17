@@ -1,7 +1,7 @@
 .ministriesPage__Title {
     height: 300px;
     text-align: center;
-    background: url(http://dl.dropbox.com/u/47159282/family.jpg) no-repeat center center;
+    background: url(http://storage.biblebaptistmattoon.org/media/patch.jpg) no-repeat center center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -10,7 +10,7 @@
 
 }
 .ministriesPage__Title h1 {
-    background: rgba($primary-color, .8);
+    background: rgba($main-color, .8);
     width: 100%;
     margin-bottom: 0;
 }
@@ -45,7 +45,7 @@
 }
 
 .ministryInfo {
-    background: $primary-color;
+    background: $main-color;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -132,18 +132,6 @@
 
 }
 
-.ministriesPage__Content-main-content:last-child {
-    @include grid-column(12);
-    @include breakpoint(large){
-    @include grid-column(12);
-    border-right: none;
-    min-height: 90vh;
-}
-}
-
-.ministriesPage__Content-main-content:last-child .ministryInfo-ministry {
-    min-width: 40%;
-}
 
 .ministriesPage__Content-secondary-content {
     @include grid-column(12);
@@ -156,10 +144,10 @@
 }
 
 h3 {
-    color: $secondary-color;
+    color: $subtle-color;
     font-weight: bold;
     font-size: 20px;
-    border-bottom: 1px solid $secondary-color;
+    border-bottom: 1px solid $subtle-color;
 }
 
 .ministriesLogo, .ministriesCalendar, .ministriesPhotos {
@@ -184,7 +172,7 @@ h3 {
 
       .event-month {
         margin: 0;
-        background: $secondary-color;
+        background: $subtle-color;
         padding: 0.3rem .6rem;
         text-align: center;
         color: $white;
@@ -194,11 +182,11 @@ h3 {
 
       .event-day {
         margin: 0;
-        border: 1px solid $secondary-color;
+        border: 1px solid $subtle-color;
         padding: .4rem .6rem;
         text-align: center;
         font-size: .8rem;
-        color: $secondary-color;
+        color: $subtle-color;
       }
     }
 
@@ -228,7 +216,7 @@ h3 {
         padding: 0;
         
         a {
-            color: $secondary-color;
+            color: $subtle-color;
             font-size: 20px;
         }
       }

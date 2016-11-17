@@ -2,7 +2,7 @@
 
     .calendar-header {
         width: 100%;
-        background: $success-color; 
+        background: $subtle-color; 
         color: #ffffff;
         min-height: 165px;
     
@@ -49,7 +49,7 @@
 
     .calendar-list-item {
         max-width: 960px;
-        border-bottom: 1px dotted $warning-color;
+        border-bottom: 1px dotted $subtle-color;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -83,7 +83,6 @@
         margin-left: auto;
         margin-right: auto;
         margin-top: 30px;
-        color: $white;
 
             @include breakpoint(large){
              align-self: flex-end; 
@@ -94,12 +93,12 @@
 
             font-size: 30px;
             font-weight: bold;
-            color: $white;
+            color: $bold-color;
 
         } //h3 a
 
         .details-inner {
-            background: $primary-color;
+            background: lighten($main-color, 30%);
             display: flex;
             padding: 15px;
 
@@ -115,8 +114,8 @@
 
                 a.button.hollow {
 
-                    color: $white;
-                    border-color: $white;
+                    color: $black;
+                    border-color: $black;
                     width: 170px;
 
                 }// buttons hollow
@@ -129,7 +128,7 @@
                 flex-direction: column;
                 flex-shrink: 0;
                 justify-content: center;
-                border-left: 1px solid $white;
+                border-left: 1px solid $black;
                 margin-left: 15px;
 
                 p.month {

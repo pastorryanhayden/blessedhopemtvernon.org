@@ -1,7 +1,4 @@
-@include add-foundation-colors;
-
 header {
-    // background: lighten($dark-gray, 80%);
     background: $light-gray;
 }
 .infoBar {
@@ -17,17 +14,17 @@ header {
     height: 80px;
     flex-grow: 2;
     @include breakpoint (725px down) {
-        flex-grow:1;
+        flex-grow:1; 
         flex-shrink: 2;
     }
     }
 
     h1 a {
     text-indent: -5000px;
-    background: url(http://sitesforchurch.s3.amazonaws.com/logo2.png) no-repeat center center;
+    background: url(http://storage.biblebaptistmattoon.org/media/logoblue.png) no-repeat center center;
     width: 367px;
     height: 78px;
-    line-height: 65px;
+    line-height: 78px;
     display: block;
     margin-left: 20px;
     margin-top: 4px;
@@ -38,7 +35,7 @@ header {
             display: block;
             max-width: 330px;
             text-align: right;
-            border-right: 1px solid $dark-gray;
+            border-right: 1px solid $white;
             flex-grow: 1;
             margin-top: 10px;
             margin-bottom: 10px;
@@ -49,7 +46,7 @@ header {
             font-size: 13px;
         }
         li span {
-            color: $primary-color;
+            color: $main-color;
             margin-left: 35px;
         }
     }
@@ -74,11 +71,10 @@ header {
 .MainNavigation {
     display: none;
     @include breakpoint (726px){
-        display: block;
+       display: block;
         // background:linear-gradient(-1deg, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%) rgba(255, 255, 255, 0.89);
         background: $dark-gray;
     }
-
 
     ul.dropdown.menu {
         display: flex;
@@ -99,10 +95,12 @@ header {
     }
 }
 
-
+.MainNavigation ul li ul li a {
+    color: darken($subtle-color, 15%);
+}
 
 .MobileNavigation {
-    background: $secondary-color;
+    background:linear-gradient(-1deg, rgba(255,255,255,0.25) 0%, rgba(0,0,0,0.25) 100%) rgba(255, 255, 255, 0.89);
     padding-right:30px;
     text-align: right;
 

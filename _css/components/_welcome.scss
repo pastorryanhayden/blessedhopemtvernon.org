@@ -12,7 +12,7 @@ justify-content: flex-end;
 h1 {
     padding-top: 30px;
     padding-bottom: 30px;
-    background: rgba($primary-color, .7);
+    background: rgba($main-color, .7);
     text-align: center;
     margin-bottom: 0;
     color: $white;
@@ -34,10 +34,10 @@ h1 {
             float: right;
             border-radius: 400px;
             margin-left: 40px;
+            width: 300px;
         }
         p {
             max-width: 700px;
-
         }
     }
 
@@ -48,7 +48,7 @@ h1 {
 
 
     .wrapper {
-        background: rgba($secondary-color, .85);
+        background: rgba($subtle-color, .85);
         height: 100%;
     }
 
@@ -94,7 +94,7 @@ h1 {
     }
     h2 {
         font-weight: bold;
-        color: $primary-color;
+        color: $main-color;
     }
     p {
             max-width: 600px;
@@ -108,7 +108,9 @@ h1 {
         
         img {
             border-radius: 200px;
-            border: 2px solid $primary-color;
+            border: 2px solid $main-color;
+            width: 150px;
+            height: 150px;
             margin-bottom: 20px;
         }
     }
